@@ -25,5 +25,5 @@ jobs:
       - name: Build
         uses: npm run build
       - name: Deploy
-        uses: npm run deploy
+        uses: npm run deploy -- -r git@github.com:Fit0/github-actions-basico.git
 

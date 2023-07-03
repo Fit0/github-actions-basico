@@ -21,9 +21,9 @@ jobs:
           git config --global user.email "cd-user@my-app-not.com"
           git config --global user.name "cd-user"
       - name: Install
-        uses: npm install
+        run: npm install
       - name: Build
-        uses: npm run build
+        run: npm run build
       - name: Deploy
-        uses: npm run deploy -- -r git@github.com:Fit0/github-actions-basico.git
+        run: npm run deploy -- -r git@github.com:Fit0/github-actions-basico.git
 
